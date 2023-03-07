@@ -15,12 +15,12 @@ class _CartScreenState extends State<CartScreen> {
   List<String> productImage = [
     'assets/images/shoes.jpg',
     'assets/images/jeans.jpg',
-    'assets/images/jeans.jpg',
+    'assets/images/bshoes.jpg',
     'assets/images/pent.jpg',
     'assets/images/jeans.jpg',
-    'assets/images/jeans.jpg',
+    'assets/images/p9.jpg',
 
-    'assets/images/jeans.jpg',
+    'assets/images/pent.jpeg',
 
     // 'https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600',
     // 'https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
@@ -37,7 +37,7 @@ class _CartScreenState extends State<CartScreen> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: const Text('My Product'),
+          title: const Text('My Products'),
           centerTitle: true,
           // ignore: prefer_const_literals_to_create_immutables
           actions: [
@@ -435,12 +435,14 @@ class _CartScreenState extends State<CartScreen> {
                   children: [
                     ReuseableWidget(
                         title: 'Sub Total',
-                        value: r'$' + value.getTotalPrice().toStringAsFixed(2)),
+                        value:
+                            r'$: ' + value.getTotalPrice().toStringAsFixed(2)),
                     const ReuseableWidget(
                         title: 'Discount 5%', value: '${r'$'}20'),
                     ReuseableWidget(
                         title: 'Total Price',
-                        value: r'$' + value.getTotalPrice().toStringAsFixed(2))
+                        value:
+                            r'$: ' + value.getTotalPrice().toStringAsFixed(2))
                   ],
                 ),
               );

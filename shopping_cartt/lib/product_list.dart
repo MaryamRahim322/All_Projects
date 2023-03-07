@@ -15,32 +15,31 @@ class ShoppingListScreen extends StatefulWidget {
 class _ShoppingListScreenState extends State<ShoppingListScreen> {
   DBHelper? dbHelper = DBHelper();
   List<String> productName = [
-    'Dessert',
-    'Burger',
-    'Tikka',
-    'Fries',
-    'Cakes',
-    'Biryani',
-    'Chiken Tikkka',
+    'Shoes',
+    'Dress',
+    'Nike Shoes',
+    'Pents',
+    'Nike Shoes',
+    'Jeans',
+    'Jeans Top',
   ];
   List<String> productUnit = [
-    'KG',
-    'Dozen',
-    'KG',
-    'Dozen',
-    'KG',
-    'KG',
-    'KG',
+    'Single',
+    'Single',
+    'Single',
+    'Single',
+    'Single',
+    'Single',
+    'Single',
   ];
   List<int> productPrice = [10, 20, 30, 40, 50, 60, 70];
   List<String> productImage = [
     'assets/images/shoes.jpg',
     'assets/images/jeans.jpg',
-    'assets/images/jeans.jpg',
+    'assets/images/bshoes.jpg',
     'assets/images/pent.jpg',
-    'assets/images/jeans.jpg',
-    'assets/images/jeans.jpg',
-
+    'assets/images/bshoes.jpg',
+    'assets/images/pent.jpg',
     'assets/images/jeans.jpg',
 
     // 'https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -58,7 +57,7 @@ class _ShoppingListScreenState extends State<ShoppingListScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('Food App'),
+        title: const Text('Shopping Cart'),
         centerTitle: true,
         // ignore: prefer_const_literals_to_create_immutables
         actions: [
